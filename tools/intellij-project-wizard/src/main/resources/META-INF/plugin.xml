@@ -1,0 +1,22 @@
+<idea-plugin>
+    <id>org.godot.kotlinprojectwizard.GodotKotlinProjectWizard</id>
+    <name>Godot Kotlin Project Wizard</name>
+    <vendor email="adamwbrown@gmail.com" url="https://github.com/utopia-rise/godot-kotlin/">Godot Kotlin</vendor>
+
+    <description><![CDATA[
+    Create a Godot project who's game logic is written in Kotlin/Native
+    ]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+        <moduleType id="GODOT_KOTLIN" implementationClass="org.godot.kotlinprojectwizard.GodotKotlinModuleType"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
